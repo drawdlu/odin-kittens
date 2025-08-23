@@ -3,4 +3,8 @@ class Kitten < ApplicationRecord
   validates :age, presence: true, numericality: { in: 1..25 }
   validates :cuteness, presence: true, numericality: { in: 1..10 }
   validates :softness, presence: true, numericality: { in: 1..10 }
+
+  def as_json(options = {})
+    super({ only: [ :name, :age, :softness, :cuteness ] }.merge(options))
+  end
 end
