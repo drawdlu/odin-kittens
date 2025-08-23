@@ -23,6 +23,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navigation">
+      <div class="home">
+        <%= link_to "Odin Kittens", root_path %>
+      </div>
+      <div class="new-kitten">
+        <%= link_to "New Kitten", new_kitten_path%>
+      </div>
+    </div>
+    <div class="main-container">
+      <%= yield %>
+    </div>
   </body>
 </html>
