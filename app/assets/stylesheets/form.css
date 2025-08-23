@@ -1,13 +1,13 @@
-.simple_form.new_kitten {
+.simple_form {
     max-width: 50ch;
 }
 
-.simple_form.new_kitten .input {
+.simple_form .input {
     margin: .5rem 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-.simple_form.new_kitten .input input {
+.simple_form input {
     max-width: 25ch;
 }
