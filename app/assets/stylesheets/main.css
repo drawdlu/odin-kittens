@@ -1,3 +1,8 @@
 .main-container {
     padding: 5rem 8rem;
 }
+
+.alerts {
+    margin: 1rem;
+    text-align: center;
+}
