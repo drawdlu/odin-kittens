@@ -1,0 +1,7 @@
+<div class="display-all">
+    <% @kittens.each do |kitten| %>
+        <div class="details">
+            <%= link_to kitten.name,  kitten %>
+        </div>
+    <% end %>
+</div>
