@@ -1,0 +1,28 @@
+<div class="kitten-information">
+    <h2><%= @kitten.name %> Details</h2>
+    <div class="information">
+        <div class="info">
+            <span>Name:</span> <%= @kitten.name%>
+        </div>
+        <div class="info">
+            <span>Age:</span> <%= @kitten.age %>
+        </div>
+        <div class="info">
+            <span>Cuteness:</span> <%= @kitten.cuteness %>
+        </div>
+        <div class="info">
+            <span>Softness:</span> <%= @kitten.softness %>
+        </div>
+    </div>
+    <div class="links">
+        <div class="link">
+            <%= link_to "Edit", edit_kitten_path%>
+        </div>
+        <div class="link">
+            <%= link_to "Delete", kitten_path, data: {
+                        turbo_method: :delete, 
+                        turbo_confirm: "Are you sure you want to delete this kitten?"
+                        }%>
+        </div>
+    </div>
+</div>
